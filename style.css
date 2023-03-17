@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Golos Text', sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: rgb(248, 249, 251);
+}
+
+nav{
+    box-shadow: 0px 3px 5px 0px rgba(74,74,74,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(74,74,74,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(74,74,74,0.75);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: darkgray;
+    text-decoration: none;
+}
+
+.logo{
+    flex: 1;
+    padding-left: 20px;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.logo a:hover{
+    opacity: 0.75;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    opacity: 1.0;
+}
+
+.menu{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+.menu li{
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+
+.menu img{
+    height: 30px;
+    width: 30px;
+    opacity: 1.0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    
+    .logo img{
+        height: 45px;
+        width: 45px;
+        margin-left: -20px;
+    }
+
+    .menu{
+        margin-top: 20px;
+        display: none;
+        padding-left: 0px;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+}
+
+.bottom{
+    position: absolute;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.bottom a{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.bottom a:hover{
+    color: darkgray;
+}
+

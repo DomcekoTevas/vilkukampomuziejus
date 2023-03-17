@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Vilkų Kampo Muziejus</title>
+    <link rel="icon" href="images/logo.jpg" type="image/icon type">
+</head> 
+<header>
+  <style>
+    nav{
+        align-items: center;
+    }
+
+    .menu{
+        padding-top: 15px;
+    }
+    
+    @media screen and (max-width: 500px){
+        .toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    }
+    .menu{
+    margin-top: 0px;
+    }
+    }
+</style>
+  <nav>
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg"></a>
+    </div>
+    <div class="toggle">
+      <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Pradžia</a></li>
+      <li><a href="apiemus.html">Apie Mus</a></li>
+      <li><a href="galerija.html">Galerija</a></li>
+      <li><a href="kontaktai.html">Kontaktai</a></li>
+      <li><a href="https://www.facebook.com/mindaugas.nogaitis" target="_blank" rel="noopener noreferrer"><img src="images/fblogo.jpg"></a></li>
+    </ul>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <script>
+    $(function(){
+      $(".toggle").on("click", function(){
+        if($(".menu").hasClass("active")){
+          $(".menu").removeClass("active");
+          $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");  
+        } else{
+          $(".menu").addClass("active");
+          $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+        }
+        });
+      });
+  </script>
+</header>
+<body>
+  <style>
+  #bannerimage {
+    margin-top: 10px;
+    background-image: url(images/mainfoto.jpg);
+    height: 143px;
+    background-position: center;
+    background-size: cover;
+  }
+@media (max-width: 500px) {
+  #bannerimage { height: 100px; }
+}
+  </style>
+
+  <div id="bannerimage"></div>
+
+
+
+<style>   
+    h1{
+      margin-top: 50px; 
+      margin-bottom: 50px; 
+      text-align: center; 
+      font-size: 30px; 
+      font-weight: bold; 
+      text-transform: uppercase;
+    }
+
+    .apiemus{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .apie img{
+      width: 25%; 
+      border: 2px solid black;
+      float: right;
+      margin-right: 200px;
+      margin-left: 30px;
+    }
+
+    .text{
+      font-size: 16px; 
+      margin-left: 200px; 
+      margin-right: 55px;
+    }
+
+    @media screen and (max-width: 1000px){
+      .apiemus{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+      .text{
+        font-size: 16px; 
+        margin-left: 100px; 
+        margin-right: 55px;
+      }
+
+      .apie img{
+        width: 35%; 
+        border: 2px solid black;
+        float: right;
+        margin-right: 100px;
+        margin-left: 30px;
+      }
+
+      h1{
+        margin-top: 30px;
+        font-size: 25px;
+        margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 700px){
+      .apiemus{
+        flex-direction: column;
+      }
+
+      .text{
+        font-size: 14px;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+
+      .apie img{
+          border: 2px solid black;
+          width: 70%;
+          float:none;
+          margin: auto;
+          display: block; 
+          margin-bottom: 30px;
+      }
+
+      h1{
+        margin-top: 30px;
+        font-size: 22px;
+        margin-bottom: 30px;
+        }
+    }
+</style>
+
+<h1>Vilkų Kampo muziejus</h1>
+
+<div class="apiemus">
+<div class="apie">
+    <img src="images/2007_14.jpg">
+<div class="text">Vilkų Kampo muziejus - tai virš 30 metų renkama įvairiausių senovinių muzikos instrumentų, Mažosios Lietuvos krašto relikvijų bei daugybės įvairių XVIII - XXa. eksponatų kolekcija.</div>
+</div>
+</div>
+
+
+<style>
+  h3{
+    margin-top: 120px; 
+    margin-bottom: 30px; 
+    text-align: center; 
+    font-size: 25px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+  }
+  
+  h3 a{
+    color: rgb(100, 46, 8);
+    text-decoration: underline;
+  }
+
+  h3 a:hover{
+    color: darkgray;
+  }
+
+  @media screen and (max-width: 1000px){
+    h3{
+      margin-top: 100px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<h3><a href="kontaktai.html">Susisiekite su mumis:</a></h3>
+
+<iframe style="margin-left: auto; margin-right: auto; width: 80%; display: block; height: 360px; border: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.05510703301!2d21.638052515565505!3d55.47913732053308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e4f7824a6fec15%3A0xbb91a844ea93a179!2sVilk%C5%B3%20Kampo%20muziejus!5e0!3m2!1sen!2slt!4v1677595294852!5m2!1sen!2slt"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<style>
+  .albumai{
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+  }
+  
+  .albumas img{
+      border: 2px solid black;
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+
+  @media (max-width: 900px){
+      .albumai{
+          flex-direction: column;
+      }
+
+      .albumas{
+          padding-top: 20px;
+      }
+
+
+  }
+</style>
+
+<div class="albumai">
+  <div class="albumas">
+      <img src="images/1.jpg">
+  </div>
+  <div class="albumas">
+      <img src="images/2.jpg">
+  </div>
+  <div class="albumas">
+      <img src="images/3.jpg">
+  </div>
+</div>
+
+
+  <style>
+    .vaizdai{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: rgb(252, 245, 234);
+    }
+
+    .vaizdas{
+        text-align: left;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .vaizdas iframe{
+        width: 420px;
+        height: 240px;
+    }
+
+    h2{
+      margin-top: 120px; 
+      margin-bottom: 30px; 
+      text-align: center; 
+      font-size: 25px; 
+      font-weight: bold; 
+      text-transform: uppercase;
+    }
+
+    h4{
+      padding-top: 20px;
+      font-size: 18px; 
+      font-weight: bolder;
+    }
+
+    h5{
+      font-size: 14px;
+    }
+    
+    h6{
+      font-size: 14px;
+    }
+
+    .vaizdas h4{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .vaizdas h5{
+        text-align: left;
+    }
+
+    .vaizdas h6{
+        text-align: right;
+        padding-bottom: 20px;
+    }
+
+
+    @media (max-width: 1000px){
+
+      .vaizdai{
+        flex-direction: column;
+      }
+
+      .vaizdas iframe{
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .vaizdas{
+        margin-bottom: 20px;
+      }    
+
+      h2{
+        margin-top: 100px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      h4{
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      h5{
+        font-size: 12px;
+      }
+
+      h6{
+        font-size: 12px;
+      }
+    }
+  </style>
+  <h2>Dainos</h2>
+  <div class="vaizdai">
+    <div class="vaizdas">
+      <h4>M. Nogaitis: "Parneš namo"</h4>
+        <iframe src="https://www.youtube.com/embed/2XlQx4H6wkU" frameborder="0" allowfullscreen></iframe>
+      <h5>Filmavo: J. Girskis, T. Žemgulis.</h5><h6>2013 06 20</h6>
+      
+    </div>
+    <div class="vaizdas">
+      <h4>M. Nogaitis: "Pamary"</h4>
+        <iframe src="https://www.youtube.com/embed/bfdk78m0hlc" frameborder="0" allowfullscreen></iframe>
+      <h5>Filmavo: A. Bružas, V. Marcinkevičius.</h5><h6>2017 05 20</h6>
+    </div>
+  </div>
+
+</body>
+<footer>
+
+  <style>
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: black;
+      padding: 8px 12px;
+      opacity: 0.4;
+      border-radius: 3px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    #myBtn:hover {
+      background-color: black;
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 500px){
+        #myBtn{
+            bottom: 10px;
+            right: 10px;
+            padding: 3px 7px;
+        }
+    }
+</style>
+<button onclick="topFunction()" id="myBtn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+    <div style="margin-top: 400px" class="bottom">
+        <a href="apiemus.html">Apie Mus</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontaktai.html">Kontaktai</a>
+    </div> 
+</footer>
+</html>

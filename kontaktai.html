@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Kontaktai | Vilkų Kampo Muziejus</title>
+    <link rel="icon" href="images/logo.jpg" type="image/icon type">
+</head>
+<header>
+  <style>
+    
+    nav{
+        align-items: center;
+    }
+    .menu{
+        padding-top: 15px;
+    }
+    
+    @media screen and (max-width: 500px){
+        .toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    }
+    .menu{
+    margin-top: 0px;
+    }
+    }
+</style>
+  <nav>
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg"></a>
+    </div>
+    <div class="toggle">
+      <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Pradžia</a></li>
+      <li><a href="apiemus.html">Apie Mus</a></li>
+      <li><a href="galerija.html">Galerija</a></li>
+      <li><a href="kontaktai.html">Kontaktai</a></li>
+      <li><a href="https://www.facebook.com/mindaugas.nogaitis" target="_blank" rel="noopener noreferrer"><img src="images/fblogo.jpg"></a></li>
+    </ul>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <script>
+    $(function(){
+      $(".toggle").on("click", function(){
+        if($(".menu").hasClass("active")){
+          $(".menu").removeClass("active");
+          $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");  
+        } else{
+          $(".menu").addClass("active");
+          $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+        }
+        });
+      });
+  </script>
+</header>
+<body>
+    
+    <style>
+      .kontaktai{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+  
+    .kontaktas img{
+        border: 2px solid black;
+        float: right;
+        margin-top: 30px;
+        width:70%;  
+        margin-right: 50px;
+        margin-left: 20px;
+        
+    }
+  
+    .text{
+      font-weight: 16px; 
+      margin-left: 45px; 
+      margin-right: 45px;
+    }
+    
+    h1{
+    margin-top: 40px; 
+    margin-bottom: 30px; 
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    }
+    @media screen and (max-width: 900px){
+      h1{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        }  
+    }
+  
+    @media screen and (max-width: 500px){
+        .kontaktai{
+          flex-direction: column;
+          margin-top: 10px;
+        }
+  
+        .text{
+          text-align: left;
+          margin-left: 0px;
+        }
+  
+        .kontaktas img{
+          border: 2px solid black;
+          width: 70%;
+          float:none;
+          margin: auto;
+          display: block;   
+          margin-top: 30px;
+        }
+
+        h1{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        }  
+    }
+    </style>
+
+    <h1>Kontaktai</h1>
+
+    <iframe style="padding-top: 10px; width: 100%; height: 360px; border: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.05510703301!2d21.638052515565505!3d55.47913732053308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e4f7824a6fec15%3A0xbb91a844ea93a179!2sVilk%C5%B3%20Kampo%20muziejus!5e0!3m2!1sen!2slt!4v1677595294852!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="kontaktai">
+      <div class="text">
+        <p style="text-align: left; padding-left: 50px; margin-top:35px;font-weight: bold; text-transform: uppercase; font-size: 20px;">Kontaktai:</p>
+        <p style="text-align: left; padding-left: 50px; margin-top: -15px;  font-weight: bolder; font-size: 16px;">El. paštas: vilkenas@gmail.com</p>
+
+        <p style="text-align: left; padding-left: 50px; margin-top: -12px;  font-weight: bolder; font-size: 16px;">Tel. Numeris: +37061155914</p>
+
+        <p style="text-align: left; padding-left: 50px; margin-top: 25px; font-weight: bold; text-transform: uppercase; font-size: 20px;">Adresas:</p>
+
+        <p style="text-align: left; padding-left: 50px; margin-top: -15px;  font-weight: bolder; font-size: 16px;">Ašvos g. 10, 99388 Vilkų Kampas</p>
+
+        <p style="text-align: left; padding-left: 50px; margin-top: 25px;font-weight: bold; text-transform: uppercase; font-size: 20px;">Darbo valandos:</p>
+
+        <p style="text-align: left; padding-left: 50px; margin-top: -15px;  font-weight: bolder; font-size: 16px;">Dėl muziejaus apžiūros būtina susisiekti nurodytu tel. numeriu: +37061155914</p>
+      </div>
+    <div class="kontaktas">
+        <img src="images/kontaktufoto.jpg">
+    </div>
+  </div>
+
+</body>
+<footer>
+  <style>
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: black;
+      padding: 8px 12px;
+      opacity: 0.4;
+      border-radius: 3px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    #myBtn:hover {
+      background-color: black;
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 500px){
+        #myBtn{
+            bottom: 10px;
+            right: 10px;
+            padding: 3px 7px;
+        }
+    }
+</style>
+<button onclick="topFunction()" id="myBtn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+    <div style="margin-top: 300px;" class="bottom">
+        <a href="index.html">Pradžia</a>
+        <a href="apiemus.html">Apie Mus</a>
+        <a href="galerija.html">Galerija</a>
+    </div> 
+</footer>
+</html>
